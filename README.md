@@ -24,8 +24,3 @@ The setup command will:
 1. Initialize OpenSpec with OpenCode tools
 2. Prompt to create a devcontainer configuration
 3. Install Obsidian rules for your project
-
-## Requirements
-
-- Bun
-- openspec CLI
