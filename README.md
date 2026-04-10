@@ -4,7 +4,7 @@ CLI tool for bootstrapping development environments.
 
 ## What is booo?
 
-**B**un, **O**pen**C**ode, **O**penSpec and **O**bsidian
+**B**un, **O**penCode, **O**penSpec and **O**bsidian
 
 A CLI tool that sets up your project with OpenSpec, OpenCode skills, and Obsidian configuration.
 
