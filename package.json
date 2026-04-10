@@ -1,0 +1,28 @@
+{
+  "name": "booo",
+  "author": "Sylvain Gougouzian",
+  "main": "bin/index.js",
+  "version": "0.0.1",
+  "bin": {
+    "booo": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouz/booo.git"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "6.0.2"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.2.0",
+    "clipse": "^0.0.15"
+  },
+  "scripts": {
+    "make": "bun build src/index.ts --outdir bin --minify --target bun",
+    "make:exe": "bun build src/index.ts --outfile exe/booo --compile --minify",
+    "dev": "bun src/index.ts"
+  }
+}
