@@ -10,7 +10,7 @@ export default async function checkVersion(currentVersion: string) {
     if (github.ok) {
       const data = (await github.json()) as { tag_name: string };
       if (data.tag_name !== currentVersion) {
-        log(`SliDesk is out of date! Please update to ${data.tag_name}`);
+        log(`Booo is out of date! Please update to ${data.tag_name}`);
       }
     }
   } catch (_) {

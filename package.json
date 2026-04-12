@@ -2,7 +2,7 @@
   "name": "booo",
   "author": "Sylvain Gougouzian",
   "main": "bin/index.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "booo": "./bin/index.js"
   },
