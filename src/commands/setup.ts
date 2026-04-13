@@ -91,6 +91,7 @@ setupCmd.action(async () => {
     );
   }
   s.stop("Skills written");
+  await Bun.write(`${process.cwd()}/.obsidian/.gitkeep`, "");
   outro(`You're all set!`);
 });
 

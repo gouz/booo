@@ -3,10 +3,16 @@ import { Clipse } from "clipse";
 import packagejson from "../package.json";
 import checkVersion from "./utils/checkVersion";
 import setupCmd from "./commands/setup";
+import checkCmd from "./commands/check";
 
 const { log } = console;
 
-log(`👻 Booo v${packagejson.version}`);
+log(`
+  ▄▄▄▄·      ▄█▀▄
+  ▐█ ▀█▄▄█▀▄▐█▌.▐▄█▀▄
+  ▐█▀▀█▐█▌.▐▪▀█▄▀█▌.▐
+  ██▄▪▐ ▀█▄▀     ▀█▄▀
+  ·▀▀▀▀  v${packagejson.version}`);
 
 await checkVersion(packagejson.version);
 
@@ -19,7 +25,7 @@ const booo = new Clipse(
   packagejson.version,
 );
 booo
-  .addSubcommands([setupCmd])
+  .addSubcommands([setupCmd, checkCmd])
   .action(() => {
     log("use a command");
   })
